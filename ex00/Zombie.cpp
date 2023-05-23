@@ -6,7 +6,7 @@
 /*   By: sleon <sleon@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 19:57:12 by sleon             #+#    #+#             */
-/*   Updated: 2023/04/27 15:34:37 by sleon            ###   ########.fr       */
+/*   Updated: 2023/05/23 17:36:26 by sleon            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,4 +31,5 @@ Zombie* NewZombie( std::string name ){
 void randomChump( std::string name ){
 	Zombie* randomChump = new Zombie(name);
 	randomChump->Announce();
+	delete randomChump;
 }
